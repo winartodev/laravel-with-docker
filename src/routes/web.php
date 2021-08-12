@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('/genre', function(){
+    return view('genre');
+});
+
+Route::get('/artist', function(){
+    return view('artist');
+});
+
+Route::get('/album', function(){
+    return view('album');
 });
